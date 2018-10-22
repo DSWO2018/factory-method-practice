@@ -7,5 +7,8 @@ package mx.iteso.icecreams;
  * Time: 2:24 PM
  * To change this template use File | Settings | File Templates.
  */
-public class IceCream {
+public abstract class IceCream {
+
+    @Override
+    public abstract String toString();
 }
