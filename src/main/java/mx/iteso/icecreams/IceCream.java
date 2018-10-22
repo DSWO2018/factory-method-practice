@@ -8,4 +8,9 @@ package mx.iteso.icecreams;
  * To change this template use File | Settings | File Templates.
  */
 public class IceCream {
+    public String name;
+
+    public String getName(){
+        return name;
+    }
 }
