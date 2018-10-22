@@ -9,13 +9,13 @@ import mx.iteso.icecreams.water.StrawberryWaterIceCream;
 /**
  * Empty JavaDoc.
  */
-public class WaterIceCreamStore {
+public class WaterIceCreamStore extends IceCreamStore {
     /**
      * Water Creator.
      * @param flavor Sabor del helado.
      * @return helado.
      */
-    public final IceCream createWaterIceCream(final String flavor) {
+    public final IceCream createIceCream(final String flavor) {
 
         if (flavor.equals("Strawberry")) {
             return new StrawberryWaterIceCream();

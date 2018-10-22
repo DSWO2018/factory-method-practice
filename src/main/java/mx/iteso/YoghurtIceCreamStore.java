@@ -7,15 +7,15 @@ import mx.iteso.icecreams.yoghurt.PineappleYoghurtIceCream;
 import mx.iteso.icecreams.yoghurt.StrawberryYoghurtIceCream;
 
 /**
- *
+ * Empty Class.
  */
-public class YoghurtIceCreamStore {
+public class YoghurtIceCreamStore extends IceCreamStore {
     /**
      * Water Creator.
      * @param flavor Sabor del helado.
      * @return helado.
      */
-    public final IceCream createYoghurtIceCream(final String flavor) {
+    public final IceCream createIceCream(final String flavor) {
 
         if (flavor.equals("Strawberry")) {
             return new StrawberryYoghurtIceCream();
