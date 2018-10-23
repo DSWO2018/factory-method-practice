@@ -23,14 +23,16 @@ public abstract class IceCreamStore {
 
     public void prepareCone(String flavor){
 
+        IceCream myIceCream;
+
         Cone myCone = new Cone();
-        IceCream myIceCream = new IceCream();
 
         myCone.prepare();
 
         myIceCream = orderIceCream(flavor);
 
         myCone.addIceCream(myIceCream);
+
         myCone.serve();
 
     }
