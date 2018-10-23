@@ -35,31 +35,4 @@ public abstract class IceCreamStore {
 
     }
 
-    public IceCream createMilkIceCream(String flavor){
-
-        if(flavor.equals("Strawberry")){
-            return new StrawberryMilkIceCream();
-        } else if (flavor.equals("Pineapple")){
-            return new PineappleMilkIceCream();
-        } else if (flavor.equals("Mango")){
-            return new MangoMilkIceCream();
-        } else if (flavor.equals("Guava")){
-            return new GuavaMilkIceCream();
-        }
-        return null;
-    }
-
-    public IceCream createWaterIceCream(String flavor){
-
-        if(flavor.equals("Strawberry")){
-            return new StrawberryWaterIceCream();
-        } else if (flavor.equals("Pineapple")){
-            return new PineappleWaterIceCream();
-        } else if (flavor.equals("Mango")){
-            return new MangoWaterIceCream();
-        } else if (flavor.equals("Guava")){
-            return new GuavaWaterIceCream();
-        }
-        return null;
-    }
 }
