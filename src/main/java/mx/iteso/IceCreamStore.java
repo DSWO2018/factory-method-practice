@@ -14,7 +14,7 @@ public abstract class IceCreamStore {
      * @param flavor .
      */
     final void prepareCone(final String flavor) {
-        IceCream iceCream = new IceCream();
+        IceCream iceCream;
         Cone cone = new Cone();
 
         cone.prepare();
