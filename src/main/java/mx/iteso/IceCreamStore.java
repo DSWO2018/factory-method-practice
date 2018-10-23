@@ -17,7 +17,23 @@ import mx.iteso.icecreams.water.StrawberryWaterIceCream;
  * Time: 1:21 PM
  * To change this template use File | Settings | File Templates.
  */
-public class IceCreamStore {
+public abstract class IceCreamStore {
+
+    public abstract IceCream orderIceCream(String flavor);
+
+    public void prepareCone(String flavor){
+
+        Cone myCone = new Cone();
+        IceCream myIceCream = new IceCream();
+
+        myCone.prepare();
+
+        myIceCream = orderIceCream(flavor);
+
+        myCone.addIceCream(myIceCream);
+        myCone.serve();
+
+    }
 
     public IceCream createMilkIceCream(String flavor){
 
@@ -46,21 +62,4 @@ public class IceCreamStore {
         }
         return null;
     }
-
-    public void prepareCone(String base, String flavor){
-        IceCream iceCream = new IceCream();
-        Cone cone = new Cone();
-
-        cone.prepare();
-
-        if (base.equals("milk")){
-            iceCream = createMilkIceCream(flavor);
-        } else if (base.equals("water")){
-            iceCream = createWaterIceCream(flavor);
-        }
-        cone.addIceCream(iceCream);
-        cone.serve();
-
-    }
-
 }

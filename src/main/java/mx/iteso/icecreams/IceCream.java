@@ -8,4 +8,10 @@ package mx.iteso.icecreams;
  * To change this template use File | Settings | File Templates.
  */
 public class IceCream {
+
+    public String iceCreamFlavor;
+
+    public String getIceCreamFlavor(){
+        return this.iceCreamFlavor;
+    }
 }
