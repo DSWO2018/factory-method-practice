@@ -2,16 +2,28 @@ package mx.iteso;
 
 import mx.iteso.icecreams.IceCream;
 
+/**
+ *
+ */
 public class Cone {
-    public void prepare() {
-        System.out.println("Preparing cone..." );
+    /**
+     *
+     */
+    final void prepare() {
+        System.out.println("Preparing cone...");
     }
 
-    public void addIceCream(IceCream iceCream) {
+    /**
+     * @param iceCream .
+     */
+    final void addIceCream(final IceCream iceCream) {
         System.out.println("Adding" + iceCream.getName());
     }
 
-    public void serve() {
+    /**
+     *
+     */
+    final void serve() {
         System.out.println("Serving...");
     }
 }

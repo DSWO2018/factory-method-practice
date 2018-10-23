@@ -2,9 +2,15 @@ package mx.iteso.icecreams.yogurt;
 
 import mx.iteso.icecreams.IceCream;
 
+/**
+ *
+ */
 public class StrawberryYogurtIceCream extends IceCream {
-    public StrawberryYogurtIceCream(){
-        name = "Strawberry Yogurt IceCream";
+    /**
+     * @return .
+     */
+    public final String getName() {
+        return "Strawberry Yogurt IceCream";
     }
 }
 
