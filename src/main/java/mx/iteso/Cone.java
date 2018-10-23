@@ -1,6 +1,6 @@
 package mx.iteso;
 
-import mx.iteso.icecreams.IceCream;
+import mx.iteso.factories.IceCream;
 
 public class Cone {
     public void prepare() {
