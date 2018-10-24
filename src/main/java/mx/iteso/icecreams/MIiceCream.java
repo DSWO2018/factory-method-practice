@@ -4,12 +4,16 @@ import mx.iteso.icecreams.milk.GuavaMilkIceCream;
 import mx.iteso.icecreams.milk.MangoMilkIceCream;
 import mx.iteso.icecreams.milk.PineappleMilkIceCream;
 import mx.iteso.icecreams.milk.StrawberryMilkIceCream;
-import mx.iteso.icecreams.water.GuavaWaterIceCream;
-import mx.iteso.icecreams.water.MangoWaterIceCream;
-import mx.iteso.icecreams.water.PineappleWaterIceCream;
 
+/**
+ * clase milk ice cream.
+ */
 public class MIiceCream {
-    public IceCream createIceCream(final String flavor) {
+    /**
+     * crear ice cream.
+     * @param flavor .
+     * @return     */
+    public final IceCream createIceCream(final String flavor) {
         if (flavor.equals("Strawberry")) {
             return new StrawberryMilkIceCream();
         } else if (flavor.equals("Pineapple")) {

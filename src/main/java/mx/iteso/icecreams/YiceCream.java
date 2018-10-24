@@ -1,24 +1,21 @@
 package mx.iteso.icecreams;
 
-import mx.iteso.icecreams.IceCream;
-import mx.iteso.*;
-import mx.iteso.icecreams.IceCream;
-import mx.iteso.icecreams.milk.GuavaMilkIceCream;
-import mx.iteso.icecreams.milk.MangoMilkIceCream;
-import mx.iteso.icecreams.milk.PineappleMilkIceCream;
-import mx.iteso.icecreams.milk.StrawberryMilkIceCream;
-import mx.iteso.icecreams.water.GuavaWaterIceCream;
-import mx.iteso.icecreams.water.MangoWaterIceCream;
-import mx.iteso.icecreams.water.PineappleWaterIceCream;
-import mx.iteso.icecreams.water.StrawberryWaterIceCream;
+import mx.iteso.IceCreamStore;
+
 import mx.iteso.icecreams.yoghurt.GuavaYoghurtrIceCream;
 import mx.iteso.icecreams.yoghurt.MangoYoghurtIceCream;
 import mx.iteso.icecreams.yoghurt.PineappleYoghurtIceCream;
 import mx.iteso.icecreams.yoghurt.StrawberryYoghurtIceCream;
 
+/**
+ * clase yicecream.
+ */
 public class YiceCream extends IceCreamStore {
-
-    public IceCream createIceCream(final String flavor) {
+    /**
+     * crear helado.
+     * @param flavor .
+     * @return     */
+    public final IceCream createIceCream(final String flavor) {
         if (flavor.equals("Strawberry")) {
             return new StrawberryYoghurtIceCream();
         } else if (flavor.equals("Pineapple")) {

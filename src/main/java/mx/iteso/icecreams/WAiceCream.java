@@ -5,8 +5,15 @@ import mx.iteso.icecreams.water.MangoWaterIceCream;
 import mx.iteso.icecreams.water.PineappleWaterIceCream;
 import mx.iteso.icecreams.water.StrawberryWaterIceCream;
 
+/**
+ * clase water ice cream.
+ */
 public class WAiceCream {
-    public IceCream createIceCream(final String flavor) {
+    /**
+     * crear helado.
+     * @param flavor .
+     * @return     */
+    public final IceCream createIceCream(final String flavor) {
         if (flavor.equals("Strawberry")) {
             return new StrawberryWaterIceCream();
         } else if (flavor.equals("Pineapple")) {
