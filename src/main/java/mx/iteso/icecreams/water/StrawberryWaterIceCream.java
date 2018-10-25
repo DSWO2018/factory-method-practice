@@ -2,8 +2,14 @@ package mx.iteso.icecreams.water;
 
 import mx.iteso.icecreams.IceCream;
 
+/**
+ * Water Icecream.
+ */
 public class StrawberryWaterIceCream extends IceCream {
-    public StrawberryWaterIceCream() {
-        flavorname = "Strawberry Water";
+    /**
+     * @return Strawberry water.
+     */
+    public final String getName() {
+        return "Strawberry Water";
     }
 }

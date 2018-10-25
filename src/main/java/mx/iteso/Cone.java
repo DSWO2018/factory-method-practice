@@ -2,16 +2,29 @@ package mx.iteso;
 
 import mx.iteso.icecreams.IceCream;
 
+/**
+ * Cone a type of serving for a frozen dessert.
+ */
 public class Cone {
-    public void prepare() {
-
+    /**
+     * Prepare a cone.
+     */
+    final void prepare() {
+        System.out.println("Creating an awesome and delicious cone");
     }
 
-    public void addIceCream(IceCream iceCream) {
-
+    /**
+     * Adding specific Icecream.
+     * @param iceCream sasasasa.
+     */
+    final void addIceCream(final IceCream iceCream) {
+        System.out.println("Adding special love through=" + iceCream.getName());
     }
 
-    public void serve() {
-
+    /**
+     * Serving a cone.
+     */
+    final void serve() {
+        System.out.println("Now is time to enjoy yourselfe by presenting this");
     }
 }

@@ -2,8 +2,14 @@ package mx.iteso.icecreams.milk;
 
 import mx.iteso.icecreams.IceCream;
 
+/**
+ * Milk Icecream.
+ */
 public class MangoMilkIceCream extends IceCream {
-    public MangoMilkIceCream(){
-        flavorname = "Mango Milk";
+    /**
+     * @return MangoMilk.
+     */
+    public final String getName() {
+        return "Mango Milk";
     }
 }

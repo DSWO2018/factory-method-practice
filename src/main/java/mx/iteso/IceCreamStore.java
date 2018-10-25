@@ -1,18 +1,6 @@
 package mx.iteso;
 
 import mx.iteso.icecreams.IceCream;
-import mx.iteso.icecreams.milk.GuavaMilkIceCream;
-import mx.iteso.icecreams.milk.MangoMilkIceCream;
-import mx.iteso.icecreams.milk.PineappleMilkIceCream;
-import mx.iteso.icecreams.milk.StrawberryMilkIceCream;
-import mx.iteso.icecreams.water.GuavaWaterIceCream;
-import mx.iteso.icecreams.water.MangoWaterIceCream;
-import mx.iteso.icecreams.water.PineappleWaterIceCream;
-import mx.iteso.icecreams.water.StrawberryWaterIceCream;
-import mx.iteso.icecreams.yogurt.GuavaYogurtIceCream;
-import mx.iteso.icecreams.yogurt.MangoYogurtIceCream;
-import mx.iteso.icecreams.yogurt.PineappleYogurtIceCream;
-import mx.iteso.icecreams.yogurt.StrawberryYogurtIceCream;
 
 /**
  * Created with IntelliJ IDEA.
@@ -22,17 +10,25 @@ import mx.iteso.icecreams.yogurt.StrawberryYogurtIceCream;
  * To change this template use File | Settings | File Templates.
  */
 public abstract class IceCreamStore {
-
-       public void prepareCone(String flavor){
-        IceCream iceCream = new IceCream();
+    /**
+     * Store.
+     * @param flavor sabor.
+     */
+    final void prepareCone(final String flavor) {
+        IceCream iceCream;
         Cone cone = new Cone();
-
         cone.prepare();
-        iceCream = createIceCreamCone(flavor);]
+        iceCream = createIceCreamCone(flavor);
 
         cone.addIceCream(iceCream);
         cone.serve();
 
     }
+
+    /**
+     * Creates a cone.
+     * @param flavor flavor choosen.
+     * @return icecreamcone.
+     */
     public abstract IceCream createIceCreamCone(String flavor);
 }
