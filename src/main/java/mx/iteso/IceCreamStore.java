@@ -1,14 +1,14 @@
 package mx.iteso;
 
 import mx.iteso.icecreams.IceCream;
-import mx.iteso.icecreams.milk.GuavaMilkIceCream;
+/*import mx.iteso.icecreams.milk.GuavaMilkIceCream;
 import mx.iteso.icecreams.milk.MangoMilkIceCream;
 import mx.iteso.icecreams.milk.PineappleMilkIceCream;
 import mx.iteso.icecreams.milk.StrawberryMilkIceCream;
 import mx.iteso.icecreams.water.GuavaWaterIceCream;
 import mx.iteso.icecreams.water.MangoWaterIceCream;
 import mx.iteso.icecreams.water.PineappleWaterIceCream;
-import mx.iteso.icecreams.water.StrawberryWaterIceCream;
+import mx.iteso.icecreams.water.StrawberryWaterIceCream;*/
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,9 +17,9 @@ import mx.iteso.icecreams.water.StrawberryWaterIceCream;
  * Time: 1:21 PM
  * To change this template use File | Settings | File Templates.
  */
-public class IceCreamStore {
+public abstract class IceCreamStore {
 
-    public IceCream createMilkIceCream(String flavor){
+   /* public IceCream createMilkIceCream(String flavor){
 
         if(flavor.equals("Strawberry")){
             return new StrawberryMilkIceCream();
@@ -46,21 +46,30 @@ public class IceCreamStore {
         }
         return null;
     }
+    */
 
-    public void prepareCone(String base, String flavor){
+    /**
+     * crear helado.
+     * @param flavor .
+     * @return    */
+   public abstract IceCream createIceCream(String flavor);
+
+    /**
+     * preparar helado.
+     * @param base .
+     * @param flavor .     */
+    public final void prepareCone(final String base, final String flavor) {
         IceCream iceCream = new IceCream();
         Cone cone = new Cone();
-
         cone.prepare();
-
-        if (base.equals("milk")){
+        iceCream = createIceCream(flavor);
+       /* if (base.equals("milk")){
             iceCream = createMilkIceCream(flavor);
         } else if (base.equals("water")){
             iceCream = createWaterIceCream(flavor);
-        }
+        }*/
         cone.addIceCream(iceCream);
         cone.serve();
-
     }
 
 }
