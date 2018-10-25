@@ -1,11 +1,15 @@
 package mx.iteso.factories;
 
 import mx.iteso.IceCreamStore;
-import mx.iteso.icecreams.water.*;
+import mx.iteso.icecreams.water.GuavaWaterIceCream;
+import mx.iteso.icecreams.water.MangoWaterIceCream;
+import mx.iteso.icecreams.water.PineappleWaterIceCream;
+import mx.iteso.icecreams.water.StrawberryWaterIceCream;
 
 public class WaterFactory extends IceCreamStore {
-
-
+    /**
+     *
+     */
     public final IceCream createIceCreamCone(final String flavor) {
         if (flavor.equals("Guava")) {
             return new GuavaWaterIceCream();

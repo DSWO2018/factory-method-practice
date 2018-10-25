@@ -7,8 +7,9 @@ import mx.iteso.icecreams.milk.PineappleMilkIceCream;
 import mx.iteso.icecreams.milk.StrawberryMilkIceCream;
 
 public class MilkFactory extends IceCreamStore {
-
-
+    /**
+     *
+     */
     public final IceCream createIceCreamCone(final String flavor) {
         if (flavor.equals("Guava")) {
             return new GuavaMilkIceCream();

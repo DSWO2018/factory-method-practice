@@ -9,11 +9,11 @@ package mx.iteso.factories;
  */
 public abstract class IceCream {
 
-    private String iceCname;
-
     public void setName(final String nombre) {
-        this.iceCname = nombre;
     }
 
+    /**
+     * @return
+     */
     public abstract String getName();
 }
